@@ -50,7 +50,9 @@
 	display: block;
 	overflow: hidden;
 	color: white;
-	font-size: 2.4rem;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 800;
 	line-height: 3.2rem;
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
@@ -58,7 +60,7 @@
 }
 @media screen and (min-width: 1025px) {
 	.marquee-section__text {
-		font-size: 3.2rem;
+		font-size: 2.5rem;
 		line-height: 4rem;
 	}
 }
@@ -87,7 +89,7 @@ margin: 0 auto;
   width: calc(100% - 40px);
   max-width: 1340px;
 
-  height: 800px;
+  height: 700px;
 }
 
 
@@ -141,8 +143,8 @@ margin: 0 auto;
 }
 	  
 
-@media (max-width: 425px) {
-	    .swiper-button-prev::after {
+@media  (max-width: 425px) {
+	    .swiper-button-prev {
   display: none;
 }
 
@@ -162,11 +164,11 @@ margin: 0 auto;
 	.swiper-button-next{
 		
 		
-		
 	}
 	.swiper-button-prev{
 		
 	
+		
 		
 	}
 
