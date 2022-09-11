@@ -32,7 +32,7 @@
                     <h1 class="font-bold">Delphic Beauty</h1>
                 </div>
                 <div class="font-sans flex  justify-center items-center">
-                    <a href=""  class="px-2 lg:px-4 ">New</a>
+                    <a href=""  class="px-2 lg:px-4">New</a>
                     <a href="" class="px-4">Makeup</a>
                     <a href="" class="px-4">Skincare</a>
                     <a href="" class="px-4">Shade Finder</a>
@@ -69,7 +69,7 @@
 
                         <button onclick="openCart()" class="">
                              <div class="bg-[#7D9AFF] rounded-full w-4 h-4 flex justify-center absolute ml-4 -mt-2">
-                                 <p class="text-xs text-white">1</p>
+                                 <p class="text-xs text-white">0</p>
                              </div>
                              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23 6.066v12.065l-11.001 5.869-11-5.869v-12.131l11-6 11.001 6.066zm-21.001 11.465l9.5 5.069v-10.57l-9.5-4.946v10.447zm20.001-10.388l-9.501 4.889v10.568l9.501-5.069v-10.388zm-5.52 1.716l-9.534-4.964-4.349 2.373 9.404 4.896 4.479-2.305zm-8.476-5.541l9.565 4.98 3.832-1.972-9.405-5.185-3.992 2.177z"/></svg>
                          </button>
@@ -84,8 +84,8 @@
 
 		</div>
 		<!-- Menu Cart -->
-		<div id="cart-bg" class="'top-0','left-0','bottom-0','right-0','fixed','bg-black','opacity-70','z-[49]" onclick="closeCart()"></div>
-		<div id="menu-cart" class="fixed top-0 right-[-450px] w-[400px] h-screen z-50 bg-[#FBF6F1]  flex flex-col space-y-5  duration-300 border-l border-black">
+		<div id="cart-bg" class="'top-0','left-0','bottom-0','right-0','fixed','bg-black','opacity-70','z-[49]'" onclick="closeCart()"></div>
+		<div id="menu-cart" class="fixed top-0 h-screen right-[-450px] lg:w-[400px] lg:h-screen z-50 bg-[#FBF6F1]  flex flex-col space-y-5  duration-300 border-l border-black">
 		
        
 		<div class="border-b border-black w-full p-5 flex items-center justify-between">
@@ -95,28 +95,16 @@
 </svg>
 </span>
 		</div>
-		<div class="flex p-5 align-text-top">
-			<div>
-				<img class="w-20 h-24 object-cover border border-black" src="https://images.unsplash.com/photo-1601065874033-aa9138d9f155?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80" alt="">
-			</div>
-			<div class="ml-4">
-				<h4 class="text-black">Moonlight Facial Oil</h4>
-				<p class="mt-4">$24.99</p>
-				<div class="flex items-center justify-between mt-2">
-					<span>-</span>
-					<span>1</span>
-					<span>+</span>
-
-				</div>
-				
-			</div>
+		<div class="flex p-5  text-center">
+			<h1 class="text-3xl font-bold text-center">Your Cart is Empty</h1>
+			
 		</div>
 		
 		
 		 <!-- Cart Footer -->
 		<div class="absolute left-0 right-0 bottom-0 ">
 
-			<div class="flex flex-col items-center justify-evenly bg-[#cd9a94] p-6">
+			<div class="flex flex-col items-center justify-evenly p-6">
 				<div>
 	 <button class="w-[275px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] text-sm font-bold border border-black uppercase tracking-widest">View Cart</button>
 				</div>
@@ -134,24 +122,101 @@
 
     
    <!-- Mobile Navigation -->
-         <div class="bg-[#FBF6F1] fixed bottom-0 left-0 z-50 py-6 px-6 border-b border-t border-black w-full  lg:hidden ">
-             <div class="grid grid-cols-3 items-center sticky bottom-0">
+         <div class="bg-[#FBF6F1] fixed bottom-0 left-0  z-50 py-4 px-4 border-b border-t border-black w-full sm:hidden md:hidden  lg:hidden ">
+             <div class="grid grid-cols-4 items-center justify-center sticky bottom-0">
                  <div class=" flex justify-center">
-                    <p class="text-lg font-bold">Menu</p>
+                        <div class="flex items-center justify-center">
+
+                        <a href="#" onclick="" class="flex flex-col items-center ">
+                             
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+</svg>
+
+							 <p class="text-xs mt-2">Home</p>
+                         </a>
+                    </div>
                  </div>
-                <div>
-                    <h1 class="text-black flex justify-center font-bold">Delphic</h1>
-                                </div>
-                <div class="flex justify-center">
-                   <p class="text-lg font-bold">Cart (0)</p>
+                 <div class=" flex justify-center">
+                        <div class="flex items-center justify-center">
+
+                        <button onclick="" class="flex flex-col items-center ">
+                             
+<svg class="w-5 h-5" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m13 16.745c0-.414-.336-.75-.75-.75h-9.5c-.414 0-.75.336-.75.75s.336.75.75.75h9.5c.414 0 .75-.336.75-.75zm9-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm-4-5c0-.414-.336-.75-.75-.75h-14.5c-.414 0-.75.336-.75.75s.336.75.75.75h14.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
+
+							 <p class="text-xs mt-2">Menu</p>
+                         </button>
+                    </div>
+                 </div>
+                 <div class=" flex justify-center">
+                        <div class="flex items-center justify-center">
+
+                        <button onclick="" class="flex flex-col items-center ">
+                             
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 -ml-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+</svg>
+
+							 <p class="text-xs mt-2">Search</p>
+                         </button>
+                    </div>
+                 </div>
+                
+                <div class="flex justify-center items-center">
+                          <div class=" ">
+
+                        <button  onclick="openCart()" class="flex flex-col items-center">
+                             <div class="bg-[#7D9AFF] rounded-full w-4 h-4 flex justify-center absolute ml-6 -mt-2">
+                                 <p class="text-xs text-white">0</p>
+                             </div>
+                             <svg  xmlns="http://www.w3.org/2000/svg"  class="w-5 h-5" viewBox="0 0 24 24" ><path d="M23 6.066v12.065l-11.001 5.869-11-5.869v-12.131l11-6 11.001 6.066zm-21.001 11.465l9.5 5.069v-10.57l-9.5-4.946v10.447zm20.001-10.388l-9.501 4.889v10.568l9.501-5.069v-10.388zm-5.52 1.716l-9.534-4.964-4.349 2.373 9.404 4.896 4.479-2.305zm-8.476-5.541l9.565 4.98 3.832-1.972-9.405-5.185-3.992 2.177z"/></svg>
+							 <p class="text-xs mt-2">Cart</p>
+                         </button>
+                    </div>
                 </div>
             </div>
         </div>
+
+		<!-- Mobile Menu -->
+
+<!-- 		
+		<div id="mobile-menu" class=" top-0 left-0 w-[425px] z-50 bg-[#FBF6F1] flex flex-col space-y-5  duration-300 ">
+		
+    
+		<div class="flex flex-col  align-text-top">
+			<div class=" w-full border-b border-t p-6  border-black">
+			<a class="font-sans text-3xl font-bold text-black" href="">Home</a>
+			</div>
+			
+			<div class=" w-full border-b p-6 border-black">
+			<a class="font-sans text-3xl font-bold text-black" href="">Makeup</a>
+			</div>
+			
+			<div class=" w-full border-b p-6  border-black">
+			<a class="font-sans text-3xl font-bold text-black" href="">Skincare</a>
+			</div>
+			
+			<div class=" w-full border-b p-6  border-black">
+			<a class="font-sans text-3xl font-bold text-black" href="">Shop All</a>
+			</div>
+			
+			<div class=" w-full border-b p-6  border-black">
+			<a class="font-sans text-3xl font-bold text-black" href="">New</a>
+			</div>
+			
+			<div class=" w-full border-b p-6  border-black">
+			<a class="font-sans text-3xl font-bold text-black" href="">About</a>
+			</div>
+			
+			
+			
+		</div> -->
+		
        
         <!-- Hero Image -->
         
 <section class="relative h-[750px] flex flex-col  justify-end text-black py-20 px-10 -z-10">
-    <div class=" absolute top-0 left-0 w-full h-full overflow-hidden ">
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden ">
         <video class="min-w-full min-h-full absolute object-cover" src="./videos/Skincare Hero.mov" type="video/mp4" autoplay muted loop></video>
         <div class="bg-gray-400 backdrop-brightness-75 bg-neutral-700/40 w-full h-full">
     

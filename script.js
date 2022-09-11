@@ -1,5 +1,6 @@
 var menuCart = document.getElementById("menu-cart")
 var menuBackground = document.getElementById("cart-bg")
+var mobileMenu = document.getElementById("mobile-menu")
 
 
 openCart = () =>{
@@ -23,6 +24,12 @@ closeCart = () =>{
 			"z-[49]",
 		);
 
+}
+
+closeMobileMenu = () =>{
+    mobileMenu.classList.add()
+    mobileMenu.classList.remove('fixed', 'top-0', 'left-0', 'w-[425px]', 'z-50', 'bg-[#FBF6F1]', 'flex', 'flex-col', 'space-y-5','duration-300')
+    
 }
 
 
