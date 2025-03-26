@@ -5,13 +5,13 @@ var mobileMenu = document.getElementById("mobile-menu")
 
 openCart = () =>{
    menuCart.classList.remove("right-[-450px]");
-   menuCart.classList.add('right-0')
+   menuCart.classList.add('right-0','mr-8', )
    menuBackground.classList.add('top-0','left-0','bottom-0','right-0','fixed','bg-black','opacity-70','z-[49]');
     
 }
 
 closeCart = () =>{
-    menuCart.classList.remove("right-0");
+    menuCart.classList.remove("right-0","mr-8","mt-8");
 	menuCart.classList.add("right-[-450px]");
     menuBackground.classList.remove(
 			"top-0",
@@ -22,6 +22,7 @@ closeCart = () =>{
 			"bg-black",
 			"opacity-70",
 			"z-[49]",
+			
 		);
 
 }

@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -31,12 +32,12 @@
                 <div class="flex">
                     <h1 class="font-bold">Delphic Beauty</h1>
                 </div>
-                <div class="font-sans flex  justify-center items-center">
+                <div class="font-sans flex justify-center items-center">
                     <a href=""  class="px-2 lg:px-4">New</a>
                     <a href="" class="px-4">Makeup</a>
                     <a href="" class="px-4">Skincare</a>
-                    <a href="" class="px-4">Shade Finder</a>
-                    <a href="" class="px-4">Sale</a>
+                    <a href="" class="px-4">Fragrance</a>
+                    <a href="" class="px-4">Rewards</a>
                 </div>
                 
                 <div class="flex items-center justify-end">
@@ -85,18 +86,20 @@
 		</div>
 		<!-- Menu Cart -->
 		<div id="cart-bg" class="'top-0','left-0','bottom-0','right-0','fixed','bg-black','opacity-70','z-[49]'" onclick="closeCart()"></div>
-		<div id="menu-cart" class="fixed top-0 h-screen right-[-450px] lg:w-[400px] lg:h-screen z-50 bg-[#FBF6F1]  flex flex-col space-y-5  duration-300 border-l border-black">
+		
+			<div id="menu-cart" class="fixed top-8 bottom-8  h-full max-h-[95vh] right-[-450px] lg:w-[450px] lg:h-screen z-50 rounded-lg  bg-[#FBF6F1]  flex flex-col space-y-5  duration-300 ease-in-out ">
+		
 		
        
 		<div class="border-b border-black w-full p-5 flex items-center justify-between">
-			<h1 class="font-sans text-3xl font-bold text-black">My Cart</h1>
+			<h1 class="font-sans text-3xl font-semibold text-black uppercase">Your Bag</h1>
 			<span class="cursor-pointer" onclick="closeCart()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 </svg>
 </span>
 		</div>
 		<div class="flex p-5  text-center">
-			<h1 class="text-3xl font-bold text-center">Your Cart is Empty</h1>
+			<h1 class="text-3xl font-bold text-center">Your Bag is Empty</h1>
 			
 		</div>
 		
@@ -106,10 +109,10 @@
 
 			<div class="flex flex-col items-center justify-evenly p-6">
 				<div>
-	 <button class="w-[275px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] text-sm font-bold border border-black uppercase tracking-widest">View Cart</button>
+	 <button class="w-[275px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] text-sm font-bold rounded-md  uppercase tracking-widest">View Cart</button>
 				</div>
 				<div>
-		 <button class="w-[275px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] text-sm font-bold border border-black uppercase tracking-widest">Checkout</button>
+		 <button class="w-[275px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] text-sm font-bold rounded-md uppercase tracking-widest">Checkout</button>
 				</div>
 			
 			
