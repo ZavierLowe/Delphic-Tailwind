@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="output.css">
+        
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
          
 		<title>Delphic Beauty</title>
 	</head>
-	<body class="bg-[#FBF6F1] " >
+	<body >
         <!-- Shipping Message -->
         <div class="py-4 bg-[#7D9AFF] border-b border-black">
             <h1 class="text-center text-[#FBF6F1] font-bold font-sans uppercase"> Free Shipping on Orders Over $100</h1>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="px-2  lg:px-4 flex ">
 
-                        <button onclick="openCart()" class="">
+                        <button onclick="openCart()" class="cursor-pointer">
                              <div class="bg-[#7D9AFF] rounded-full w-4 h-4 flex justify-center absolute ml-4 -mt-2">
                                  <p class="text-xs text-white">0</p>
                              </div>
@@ -87,7 +87,7 @@
 		<!-- Menu Cart -->
 		<div id="cart-bg" class="'top-0','left-0','bottom-0','right-0','fixed','bg-black','opacity-70','z-[49]'" onclick="closeCart()"></div>
 		
-			<div id="menu-cart" class="fixed top-8 bottom-8  h-full max-h-[95vh] right-[-450px] lg:w-[450px] lg:h-screen z-50 rounded-lg  bg-[#FBF6F1]  flex flex-col space-y-5  duration-300 ease-in-out ">
+			<div id="menu-cart" class="fixed top-4 bottom-8  h-full max-h-[95vh] right-[-450px] lg:w-[450px] lg:h-screen z-50 rounded-3xl  bg-[#FBF6F1]  flex flex-col space-y-5  duration-300 ease-out">
 		
 		
        
@@ -109,7 +109,7 @@
 
 			<div class="flex flex-col items-center justify-evenly p-6">
 				<div>
-	 <button class="w-[275px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] text-sm font-bold rounded-md  uppercase tracking-widest">View Cart</button>
+	 <!-- <button class="w-[275px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] text-sm font-bold rounded-md  uppercase tracking-widest">View Cart</button> -->
 				</div>
 				<div>
 		 <button class="w-[275px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] text-sm font-bold rounded-md uppercase tracking-widest">Checkout</button>
@@ -218,17 +218,17 @@
        
         <!-- Hero Image -->
         
-<section class="relative h-[750px] flex flex-col  justify-end text-black py-20 px-10 -z-10">
+<section class=" relative h-[750px] flex flex-col  justify-end text-black py-20 px-10 ">
     <div class="absolute top-0 left-0 w-full h-full overflow-hidden ">
         <video class="min-w-full min-h-full absolute object-cover" src="./videos/Skincare Hero.mov" type="video/mp4" autoplay muted loop></video>
         <div class="bg-gray-400 backdrop-brightness-75 bg-neutral-700/40 w-full h-full">
     
         </div>
     </div>
-    <div class="z-10 space-y-6 max-w-sm">
+    <div class="z-50 space-y-6 max-w-sm">
         <h1 class="font-bold font-sans text-6xl text-white">Get the Skin You Want!</h1>
         <p class=" max-w-md text-white font-sans ">We’re bringing you the latest and greatest when it comes to skincare. Look good and feel good!</p>
-        <button class="w-[250px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] font-bold border border-black">Shop Now</button>
+        <button class="w-[175px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] font-normal uppercase cursor-pointer rounded-full hover:underline hover:bg-[#766623] duration-200 ">Shop Now</button>
 
     </div>
 </section>
