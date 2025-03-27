@@ -34,8 +34,47 @@ closeMobileMenu = () =>{
 }
 
 
+let shoppingCart = []
+
+localStorage.setItem(shoppingCart,JSON.stringify([]))
+
+const addToCart = () =>{
+	let sampleItem = document.getElementById('sample')
+	document.querySelector('button')
+	
+	
 
 
+}
+
+//loading products dynamically from json data
+
+async function loadProducts() {
+    const response = await fetch("../data/products.json");
+    const products = await response.json();
+    const productContainer = document.getElementById("products");
+
+    products.forEach(product => {
+        const productElement = document.createElement("div");
+        productElement.classList.add("product");
+        productElement.innerHTML = `
+			<img src=${product.image}>
+            <p>${product.name} - $${product.price.toFixed(2)}</p>
+            <button class="add-btn cursor-pointer" data-id="${product.id}">Add to Cart</button>
+        `;
+        productContainer.appendChild(productElement);
+    });
+
+    // Attach event listeners to add buttons
+    document.querySelectorAll(".add-btn").forEach(button => {
+        button.addEventListener("click", () => {
+            const product = products.find(p => p.id === parseInt(button.dataset.id));
+            addToCart(product);
+        });
+    });
+}
+
+loadProducts()
 
 
 //Add a div with the outside classes
