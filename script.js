@@ -33,19 +33,42 @@ closeMobileMenu = () =>{
     
 }
 
+// const getCart = () =>{
+//     return JSON.parse(localStorage.getItem(cart) || [])
+// }
 
-let shoppingCart = []
+// console.log(getCart);
 
-localStorage.setItem(shoppingCart,JSON.stringify([]))
+// const saveCart = (cart) =>{
 
-const addToCart = () =>{
-	let sampleItem = document.getElementById('sample')
-	document.querySelector('button')
-	
-	
+//     localStorage.setItem("cart",JSON.stringify(cart))
+
+    
+
+// }
+
+// let cart = [
+
+//     {id:1,name:"cards"},
+//     {id:2,name:"cards"},
+//     {id:1,name:"cards"},
+//     {id:1,name:"cards"},
+//     {id:1,name:"cards"}
+// ]
+
+// let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 
-}
+ 
+    
+
+// let shoppingCart = localStorage.setItem(cart,JSON.stringify(cart))
+
+// let newItem = [{id:2,name:"bob"}]
+
+// const moreItems = cart.push(newItem)
+
+
 
 //loading products dynamically from json data
 
@@ -60,21 +83,68 @@ async function loadProducts() {
         productElement.innerHTML = `
 			<img src=${product.image}>
             <p>${product.name} - $${product.price.toFixed(2)}</p>
-            <button class="add-btn w-[175px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] font-normal uppercase cursor-pointer rounded-full hover:underline hover:bg-[#766623] duration-200  data-id="${product.id}">Add to Cart</button>
+            <button class="add-btn w-full h-[48px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] font-normal uppercase cursor-pointer rounded-md hover:underline hover:bg-[#766623] duration-200" data-id="${product.id}"  id="addToCart2">Add to Cart</button>
         `;
         productContainer.appendChild(productElement);
     });
+    
+  
+
+    
 
     // Attach event listeners to add buttons
     document.querySelectorAll(".add-btn").forEach(button => {
         button.addEventListener("click", () => {
             const product = products.find(p => p.id === parseInt(button.dataset.id));
             addToCart(product);
+            console.log(product);
+            
         });
     });
+
+   
+    
+}
+loadProducts()
+
+addToCart()
+function addToCart(product) {
+    
+      
+        
+        
+        
+    let cart = JSON.parse(localStorage.getItem("cart")) || []; // Get cart or initialize as empty array
+    cart.push(product); // Add new item
+    localStorage.setItem("cart", JSON.stringify(cart)); // Save updated cart
+    
+
+
 }
 
-loadProducts()
+
+
+
+// function addToCart() {
+    
+//     let productId = document.getElementById('addToCart2')
+    
+//     let selectedItem = productId.dataset.id
+
+//     console.log(selectedItem);
+    
+    
+    
+//     let cart = JSON.parse(localStorage.getItem("cart")) || []; // Get cart or initialize as empty array
+//     cart.push(selectedItem); // Add new item
+//     localStorage.setItem("cart", JSON.stringify(cart)); // Save updated cart
+    
+
+
+// }
+
+
+
 
 
 //Add a div with the outside classes

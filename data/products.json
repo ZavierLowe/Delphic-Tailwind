@@ -1,8 +1,7 @@
  [
-     { "id": 1, "name": "Apple", "price": 1.99,  "image":"https://images.unsplash.com/photo-1601327413008-dd5c43f9263a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNraW5jYXJlJTIwcHJvZHVjdHN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"},
+     { "id": 1, "name": "Apple", "price": 1.99,  "image":"https://images.unsplash.com/photo-1629198735660-e39ea93f5c18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
      { "id": 2, "name": "Banana", "price": 0.99, "image":"https://images.unsplash.com/photo-1601327413008-dd5c43f9263a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNraW5jYXJlJTIwcHJvZHVjdHN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"},
      { "id": 3, "name": "Orange", "price": 1.49, "image":"https://images.unsplash.com/photo-1601327413008-dd5c43f9263a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNraW5jYXJlJTIwcHJvZHVjdHN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" },
-     { "id": 4, "name": "Apple", "price": 1.99,  "image":"https://images.unsplash.com/photo-1601327413008-dd5c43f9263a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNraW5jYXJlJTIwcHJvZHVjdHN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" },
-     { "id": 5, "name": "Banana", "price": 0.99, "image":"https://images.unsplash.com/photo-1601327413008-dd5c43f9263a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNraW5jYXJlJTIwcHJvZHVjdHN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" },
-     { "id": 6, "name": "Orange", "price": 1.49, "image":"https://images.unsplash.com/photo-1601327413008-dd5c43f9263a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNraW5jYXJlJTIwcHJvZHVjdHN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" }
+     { "id": 4, "name": "Apple", "price": 1.99,  "image":"https://images.unsplash.com/photo-1601327413008-dd5c43f9263a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNraW5jYXJlJTIwcHJvZHVjdHN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" }
+    
 ]
