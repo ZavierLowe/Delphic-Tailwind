@@ -60,7 +60,7 @@ async function loadProducts() {
         productElement.innerHTML = `
 			<img src=${product.image}>
             <p>${product.name} - $${product.price.toFixed(2)}</p>
-            <button class="add-btn cursor-pointer" data-id="${product.id}">Add to Cart</button>
+            <button class="add-btn w-[175px] h-[60px] bg-[#7D9AFF] mt-4 text-[#FBF6F1] font-normal uppercase cursor-pointer rounded-full hover:underline hover:bg-[#766623] duration-200  data-id="${product.id}">Add to Cart</button>
         `;
         productContainer.appendChild(productElement);
     });
