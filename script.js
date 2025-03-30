@@ -33,11 +33,8 @@ closeMobileMenu = () =>{
     
 }
 
-// const getCart = () =>{
-//     return JSON.parse(localStorage.getItem(cart) || [])
-// }
 
-// console.log(getCart);
+
 
 // const saveCart = (cart) =>{
 
@@ -47,18 +44,6 @@ closeMobileMenu = () =>{
 
 // }
 
-// let cart = [
-
-//     {id:1,name:"cards"},
-//     {id:2,name:"cards"},
-//     {id:1,name:"cards"},
-//     {id:1,name:"cards"},
-//     {id:1,name:"cards"}
-// ]
-
-// let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-
  
     
 
@@ -67,6 +52,59 @@ closeMobileMenu = () =>{
 // let newItem = [{id:2,name:"bob"}]
 
 // const moreItems = cart.push(newItem)
+
+// **Summary of Closures and Callback Functions in the Add-to-Cart Logic**
+
+// 1. **Dynamic Product Loading (`loadProducts`):**
+//    - This function fetches product data and dynamically generates the HTML
+//      for each product, including an "Add to Cart" button.
+//    - Importantly, it attaches a `data-id` attribute to each button, linking it
+//      to the specific product's ID.
+
+// 2. **Event Listeners and Callback Functions:**
+//    - Inside `loadProducts`, an event listener is attached to each "Add to Cart"
+//      button, listening for "click" events.
+//    - The second argument to `addEventListener` is a **callback function**. This
+//      function is *not* executed immediately. Instead, it's stored and will
+//      be executed *later* when the button is clicked.
+
+// 3. **Closures and Access to `products`:**
+//    - The callback function defined for the event listener is created *inside*
+//      the `loadProducts` function. This forms a **closure**.
+//    - Due to the closure, the callback function retains access to the `products`
+//      array that was created within the scope of `loadProducts`, even after
+//      `loadProducts` has finished executing.
+
+// 4. **Identifying the Product in the Callback:**
+//    - When an "Add to Cart" button is clicked, the callback function executes.
+//    - It uses the `data-id` of the clicked button to find the corresponding
+//      product object within the `products` array (which it can access due to
+//      the closure).
+
+// 5. **Passing the Product to `addToCart`:**
+//    - The callback function then calls the `addToCart` function, which is
+//      defined outside of `loadProducts` (in the global scope).
+//    - The crucial point is that the callback function **passes the found
+//      `product` object as an argument** to the `addToCart` function.
+
+// 6. **`addToCart` Updates the Cart:**
+//    - The `addToCart` function receives the `product` object as a parameter.
+//    - It accesses the globally scoped `cart` array (likely initialized from
+//      `localStorage`).
+//    - It adds the received `product` to the `cart` array.
+//    - Finally, it saves the updated `cart` back to `localStorage`.
+
+// **In essence:**
+
+// - **Callback functions** are used to handle asynchronous events (like button clicks)
+//   by providing a function to be executed when the event occurs.
+// - **Closures** are essential here because the callback function needs to access
+//   the `products` array that was created in the `loadProducts` function's scope
+//   to identify the correct product.
+// - The `addToCart` function receives the specific product information not
+//   because it inherently knows about the `products` array, but because the
+//   callback function (within the closure) finds the product and explicitly
+//   passes it as an argument.
 
 
 
@@ -99,6 +137,7 @@ async function loadProducts() {
             addToCart(product);
             console.log(product);
             
+            
         });
     });
 
@@ -107,20 +146,45 @@ async function loadProducts() {
 }
 loadProducts()
 
-addToCart()
+let cart = JSON.parse(localStorage.getItem("cart")) || []
+
+
+//Works because of closures, When a function is defined inside another function, it forms a closure. 
+// This means the inner function (the event listener callback in this case) retains access to the variables of its outer (enclosing) function, 
+// even after the outer function has finished executing.
+
+
 function addToCart(product) {
     
-      
+   
+    
         
         
         
-    let cart = JSON.parse(localStorage.getItem("cart")) || []; // Get cart or initialize as empty array
+    ; // Get cart or initialize as empty array
     cart.push(product); // Add new item
     localStorage.setItem("cart", JSON.stringify(cart)); // Save updated cart
     
 
 
 }
+
+// function initializeCart(){
+//     let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+//     return cart
+    
+    
+
+//  }
+
+// function getCart () {
+//     const cart = localStorage.getItem("cart") || [] 
+//     return JSON.stringify(localStorage.getItem(cart) || [])
+    
+   
+    
+// }
 
 
 
